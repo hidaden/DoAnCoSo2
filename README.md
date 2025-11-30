@@ -19,3 +19,10 @@ CREATE TABLE product_details (
     warranty VARCHAR(100),
     brand VARCHAR(100),
 );
+3.Tạo bảng users
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
