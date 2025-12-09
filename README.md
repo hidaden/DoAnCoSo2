@@ -44,7 +44,8 @@ CREATE TABLE orders (
     address TEXT,
     payment_method VARCHAR(50),
     total_amount DECIMAL(15,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(20) DEFAULT 'pending'
 );
 6. Tạo bảng order_items
 CREATE TABLE order_items (
